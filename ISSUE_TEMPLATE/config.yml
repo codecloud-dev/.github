@@ -1,0 +1,11 @@
+blank_issues_enabled: true
+contact_links:
+  - name: "🔐 报告安全漏洞（请勿公开发帖）"
+    url: "https://github.com/codecloud-dev/.github/security/advisories/new"
+    about: "走 SECURITY.md 的私密渠道，维护者 72 小时内确认。"
+  - name: "🔍 先搜搜有没有重复"
+    url: "https://github.com/codecloud-dev/.github/issues?q=is%3Aissue"
+    about: "提交前花 10 秒搜一下，能省双方很多时间。"
+  - name: "📖 贡献指南 / 行为准则"
+    url: "https://github.com/codecloud-dev/.github/blob/HEAD/CONTRIBUTING.md"
+    about: "第一次提 PR 前可以扫一眼，必须项只有 5 条。"

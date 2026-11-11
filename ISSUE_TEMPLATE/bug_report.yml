@@ -1,0 +1,56 @@
+name: "🐛 Bug 报告"
+description: 某个功能不按预期工作
+title: "[Bug] "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        谢谢帮忙找问题！**安全漏洞请不要在这里提**，走 [SECURITY.md](../../blob/HEAD/SECURITY.md) 的私密渠道。
+        提交前建议先搜一下是否已有同类 issue。
+  - type: textarea
+    id: what
+    attributes:
+      label: 发生了什么 / 期望发生什么
+      description: 一句话说清实际行为与期望行为
+      placeholder: "实际：…；期望：…"
+    validations:
+      required: true
+  - type: textarea
+    id: repro
+    attributes:
+      label: 复现步骤【必填】
+      description: 越具体越好；偶现请写「偶现」和大概频率
+      placeholder: |
+        1. …
+        2. …
+        3. …
+    validations:
+      required: true
+  - type: input
+    id: env
+    attributes:
+      label: 环境【必填】
+      description: 系统 / 浏览器 / 设备 / 版本，任写能拿到的
+      placeholder: "例：Android 14 / Pixel 7 / v1.0.0，或 Ubuntu 22.04 / Chrome 131"
+    validations:
+      required: true
+  - type: textarea
+    id: logs
+    attributes:
+      label: 日志或截图【选填】
+      description: "贴之前请先删掉 token、账号、路径中的个人信息"
+      render: shell
+  - type: textarea
+    id: tried
+    attributes:
+      label: 已经试过什么【选填】
+  - type: checkboxes
+    id: confirm
+    attributes:
+      label: 确认
+      options:
+        - label: 我已搜索过现有 issue，没有重复
+          required: true
+        - label: 这不是安全漏洞（安全漏洞走私密渠道）
+          required: true
